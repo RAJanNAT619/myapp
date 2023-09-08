@@ -6,7 +6,7 @@ services:
        ports:
            - "80:80"
        volumes:
-	   - ./www:/vat/www/html/
+	   - ./www:/var/www/html/
        links:
            - db
        networks:
