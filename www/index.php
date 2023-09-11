@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT PersonID, FirstName, LastName FROM mydb";
+$sql = "SELECT PersonID, FirstName, LastName FROM myDb";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
